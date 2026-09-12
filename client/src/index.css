@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* ==========================
+   Light Theme (Default)
+========================== */
+
+:root {
+  --bg: #F8F5F0;
+  --surface: #ffffff;
+  --text: #3E2F2F;
+  --text-secondary: #6D4C41;
+  --border: #E8DDD5;
+
+  --primary-color: #C58A8A;
+}
+
+/* ==========================
+   Dark Theme
+========================== */
+
+[data-theme="dark"] {
+  --bg: #1F1A17;
+  --surface: #2D2623;
+  --text: #F8F5F0;
+  --text-secondary: #D6CFC8;
+  --border: #4A403B;
+
+  --primary-color: #C58A8A;
+}
+
+/* ==========================
+   Global Styling
+========================== */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+
+  transition: 0.3s;
+}
+
+* {
+  transition:
+    background-color .25s,
+    color .25s,
+    border-color .25s;
+}
