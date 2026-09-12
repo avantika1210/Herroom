@@ -11,8 +11,9 @@ const orderRoutes = require("./routes/orderRoutes");
 
 
 
-
-app.use(cors());
+app.use(cors({
+  origin: "https://herroom.vercel.app",
+}));
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/protected", protectedRoutes);
